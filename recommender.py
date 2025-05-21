@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from utils import fetch_poster
 
 # Load data
-movies = pd.read_csv('data/movies.csv')
+movies = pd.read_csv('movies.csv')
 movies['combined'] = movies['genres'] + ' ' + movies['overview']
 movies = movies.dropna(subset=['combined'])
 
