@@ -23,7 +23,7 @@ if st.button("Recommend"):
             cols = st.columns(5)
             for i in range(len(titles)):
                 with cols[i % 5]:
-                    st.image(posters[i], use_column_width=True)
+                    st.image(posters[i], use_container_width=True)
                     st.caption(titles[i])
         except Exception as e:
             st.error(f"❌ Error: {e}")
